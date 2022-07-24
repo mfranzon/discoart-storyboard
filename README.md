@@ -14,7 +14,7 @@ Giving this summary as an input to Discoart, the final result is impressive.
 Few requirements are needed :
 
 - Install the [requirements.txt](requirements.txt)
-- Having a GPU on your laptop/PC/Server/EC2 (I run this on a 3060 laptop GPU, so the values in [da_client.py](da_client.py) works for GPU with specs >= of mine)
+- Having a GPU on your laptop/PC/Server/EC2 (I run this on a 3060 laptop GPU, so the values in [da_client.py](src/da_client.py) works for GPU with specs >= of mine)
 - Correcly install torch, I think that the best way is visit the [official page](https://pytorch.org/get-started/locally/), choose your setup and than copy paste the right command
 
 ## Run the streamlit app

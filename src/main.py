@@ -27,14 +27,14 @@ if ok:
         
         text_to_image(chapter, story_title, ind)
 
-        st.text(f"Chapter {ind}")
+        st.text(f'Chapter {ind}')
        
-        data = Image.open(glob.glob(story_title + f'-Chapter-{ind}/*-done-*.png')[0])
+        data = Image.open(glob.glob('../' + story_title + f'-Chapter-{ind}/*-done-*.png')[0])
     
 
         col1, col2 = st.columns([1, 1])
         with col1:
             st.image(data, width=300)
         with col2:
-            st.write(chapter[0]["summary_text"])
+            st.write(chapter[0]['summary_text'])
         

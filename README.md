@@ -1,6 +1,6 @@
-# Discoart-StoryBoard
+# StoryBoard Creator
 
-Thanks to [Jina AI](https://duckduckgo.com) for providing the beautiful [DiscoArt](https://github.com/jina-ai/discoart), which is a very cutting edge technology for generative art. 
+Thanks to [Jina AI](https://duckduckgo.com) for providing the beautiful [DiscoArt](https://github.com/jina-ai/discoart) and [DALLE-Flow](https://github.com/jina-ai/dalle-flow).
 
 This project is a PoC for a webservice that provides a simple way to create images giving very long texts.
 Thanks to [Distillbart](https://huggingface.co/sshleifer/distilbart-cnn-12-6) model, it is possible summarize book's chapters, without losing the main themes in it.
@@ -32,7 +32,7 @@ streamlit run main.py
 Serving Discoart is very simple, the command is: 
 
 ```console
-python -m discoart serve [flow.yml](flow.yml)
+python -m discoart serve flow.yml
 ```
 I used a custom flow.yml just to specify a different protocol; I use `grpc` not `http` which is set by default. 
 
